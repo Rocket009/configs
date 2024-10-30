@@ -1,0 +1,42 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.autoSave": "afterDelay",
+    "editor.lineNumbers": "relative",
+    "vim.leader": "<space>",
+    "vim.camelCaseMotion.enable": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<leader>", "f", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<tab>"],
+            "commands": ["workbench.action.nextEditorInGroup"]
+        },
+        {
+            "before": ["<leader>", "x"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["g", "t"],
+            "commands": ["workbench.action.focusNextGroup"]
+        },
+        {
+            "before": ["g", "T"],
+            "commands": ["workbench.action.focusPreviousGroup"]
+        },
+        {
+            "before": ["<C-w>", "m"],
+            "commands": ["workbench.action.moveEditorToNextGroup"]
+        },
+        {
+            "before": ["<C-w>", "M"],
+            "commands": ["workbench.action.moveEditorToPreviousGroup"]
+        },
+        {
+            "before": ["<leader>", "f", "b"],
+            "commands": ["workbench.action.gotoSymbol"]
+        },
+
+    ]
+}
